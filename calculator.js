@@ -36,6 +36,3 @@ function operate (){
     
 }
 
-(function hello(word){
-    alert('Hello ' + word)
-})('Jay')
