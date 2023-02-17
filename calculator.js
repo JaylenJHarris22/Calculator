@@ -6,8 +6,8 @@
 getcomp()
 */
 
-const x = 0;
-const y = 5;
+// const x = 0;
+// const y = 5;
 function add (x, y){
     let sum = Number(x) + Number(y);
     return sum;
@@ -36,3 +36,12 @@ function operate (){
     
 }
 
+let nums = document.querySelectorAll('.num')
+let numsArr = Array.from(nums)
+numsArr.forEach( (num) => {
+    num.addEventListener('click', () =>{
+        let value = (Number(num.innerHTML));
+        console.log(value)
+        document.querySelector('.sNum').textContent = `${value}`
+    })
+})
